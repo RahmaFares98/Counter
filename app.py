@@ -37,3 +37,7 @@ def reset():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# # python 
+# import base64   
+# base64.urlsafe_b64decode('eyJjb3VudGVyIjoyLCJ2aXNpdF9jb3VudCI6M30===') 
