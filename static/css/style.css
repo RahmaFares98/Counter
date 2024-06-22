@@ -1,0 +1,72 @@
+/* <!-- Counter Assigenment
+Author by :Rahma Fares
+Email :Rahmafaris981@gmail.com--> */
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.inctrementBtnby2 {
+background-color: #eb7477;
+border-style: solid;
+color: white;
+border-radius: 10px;
+border-color: #eb7477;
+width: 130px;
+height: 40px;
+margin: 2% 0;
+}
+
+label{
+font-size: 18px;
+font-weight: bold;
+}
+
+.inctrementBtn{
+background-color: #eb74788e;
+border-style: solid;
+color: white;
+border-radius: 10px;
+border-color:  #eb74788e;
+width: 130px;
+height: 40px;
+margin: 2% 0;
+}
+input{
+width: 30px;
+height: 30px; 
+border-style: solid;
+border-color: #eb7477;
+}
+
+.buttonContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+}
+
+.clearSessionBtn {
+background-color: #5b836c;
+border-style: solid;
+color: white;
+border-radius: 10px;
+border-color:  #5b836c;
+width: 130px;
+height: 40px;
+margin: 2% 0;
+
+}
+.restCounterBtn{
+background-color:#1f5637;
+border-style: solid;
+color: white;
+border-radius: 10px;
+border-color:  #1f5637;
+width: 130px;
+height: 40px;
+margin: 2% 4%;
+}

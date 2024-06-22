@@ -1,0 +1,37 @@
+<!-- Counter Assigenment
+Author by :Rahma Fares
+Email :Rahmafaris981@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Counter</title>
+</head>
+
+<body>
+    <h1>Welcome to the Counter App!</h1>
+    <h2>You have visited this site {{ visit_count }} times.</h2><!--get data from back end  -->
+    <h3>Counter value: {{ counter }}</h3>
+    <form action="/incrementby2" method="post"><!--follow incrementby2 link -->
+        <button class="inctrementBtnby2" type="submit">Add two Visits !</button>
+    </form>
+    <form action="/increment" method="post"><!--follow increment link -->
+        <label for="increment_value">Increment by:</label>
+        <input type="number" name="increment_value" id="increment_value" value="1">
+        <button class="inctrementBtn" type="submit">Increment</button>
+    </form>
+    <div class="buttonContainer">
+        <form action="/destroy_session" method="get"><!--follow destroy_session link -->
+            <button type="submit" class="clearSessionBtn">Clear Session</button>
+        </form>
+        <form action="/reset" method="get"> <!--follow reset link -->
+            <button type="submit" class="restCounterBtn">Reset Counter</button>
+        </form>
+    </div>
+</body>
+
+</html>
