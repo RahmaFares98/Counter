@@ -18,14 +18,14 @@ def index():
 def increment_by_2():
     session['counter'] += 2
     session['flag'] = False  # Prevent visit_count increment on redirect
-    return redirect(url_for('index'))
+    return redirect("/")
 
 @app.route('/increment', methods=['POST'])
 def increment():
     increment_value = int(request.form.get('increment_value', 1))
     session['counter'] += increment_value
     session['flag'] = False  # Prevent visit_count increment on redirect
-    return redirect(url_for('index'))
+    return redirect("/")
 
 @app.route('/destroy_session', methods=['GET'])
 def destroy_session():
